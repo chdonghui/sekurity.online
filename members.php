@@ -13,6 +13,13 @@
 
     <!-- Custom styles for this template -->
     <link href="./css/pricing.css" rel="stylesheet">
+
+    <style>
+		/* Add padding to the .card class */
+		.card {
+			padding: 20px;
+		}
+    </style>
     </head>
     <body>
         <header class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom box-shadow">
@@ -32,12 +39,51 @@
             <!--signup.php-->
         </header>
 
+        <?php if(!isset($_COOKIE["user_id"])) {?>
         <div class="container">
             <div class="container text-center mt-5">
-                <h1 class="display-4">준비 중</h1>
-                <p class="lead">이 페이지는 아직 작업 중입니다. 곧 완성될 예정입니다. 감사합니다.</p>
+                <a class="btn btn-outline-success" href="signup.php">
+                    회원가입
+                </a>
             </div>
         </div>
+        <?php }  else {?>
+            <!-- Login Form -->
+            <main class="form-signin text-center" style="max-width: 450px; margin: 0 auto;">
+                <form method="GET" action="member_delete.php">
+                    <br><br>
+                    <img class="mb-4" src="img/seKUrity.png" alt="" width="50%" height=auto>
+                    <div class="card">
+                        <h1 class="h3 mb-3 fw-normal">Please sign Delete</h1>
+                        <div class="form-floating">
+                            <div class="input-group">
+                                <span class="input-group-text">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                                    <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z"/>
+                                    </svg>
+                                </span>
+                                <input type="text" name="id" class="form-control" id="floatingInput" placeholder="ID">
+                            </div>
+                            <label for="floatingInput"></label>
+                        </div>
+                        <div class="form-floating">
+                            <div class="input-group">
+                                <span class="input-group-text">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-lock" viewBox="0 0 16 16">
+                                    <path d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zM5 8h6a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1z"/>
+                                    </svg>
+                                </span>
+                                <input type="password" name="pw" class="form-control" id="floatingPassword" placeholder="PASSWORD">
+                            </div>
+                            <label for="floatingPassword"></label>
+                        </div>
+                        <button class="btn btn-primary w-100 py-2" type="submit">회원탈퇴</button>
+                    </div>
+                    <p class="mt-5 mb-3 text-body-secondary">&copy; 2017–2023</p>
+                </form>
+            </main>
+            <!-- End of Login Form -->
+        <?php } ?>
 
         <!-- Icons -->
         <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
@@ -61,3 +107,4 @@
         </script>
     </body>
 </html>
+

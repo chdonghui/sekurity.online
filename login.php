@@ -42,6 +42,7 @@
     <!-- Login Form -->
 	<main class="form-signin text-center" style="max-width: 450px; margin: 0 auto;">
 		<form method="GET" action="cookie_login.php">
+			<br><br>
 			<img class="mb-4" src="img/seKUrity.png" alt="" width="50%" height=auto>
 			<div class="card">
 				<h1 class="h3 mb-3 fw-normal">Please sign in</h1>
@@ -75,15 +76,12 @@
 				</div>
 				<button class="btn btn-primary w-100 py-2" type="submit">Sign in</button>
 			</div>
-			<button type="button" class="btn btn-link"><a href="forgot_password.html">Reset it</a></button>
-			<button type="button" class="btn btn-link"><a href="forgot_username.html">Find it</a></button>
-			<button type="button" class="btn btn-link"><a href="signup.html">Sign up</a></button>
+			<!-- <button type="button" class="btn btn-link"><a href="forgot_password.html">Reset it</a></button> -->
+			<!-- <button type="button" class="btn btn-link"><a href="forgot_username.html">Find it</a></button> -->
+			<button type="button" class="btn btn-link"><a href="signup.php">Sign up</a></button>
 			<p class="mt-5 mb-3 text-body-secondary">&copy; 2017–2023</p>
-
-
 		</form>
 	</main>
-
     <!-- End of Login Form -->
 </body>
 </html>
