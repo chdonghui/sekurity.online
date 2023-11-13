@@ -16,22 +16,7 @@
   </head>
 
   <body>
-     <header class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom box-shadow">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-shield-fill-check" viewBox="0 0 16 16">
-                <path fill-rule="evenodd" d="M8 0c-.69 0-1.843.265-2.928.56-1.11.3-2.229.655-2.887.87a1.54 1.54 0 0 0-1.044 1.262c-.596 4.477.787 7.795 2.465 9.99a11.777 11.777 0 0 0 2.517 2.453c.386.273.744.482 1.048.625.28.132.581.24.829.24s.548-.108.829-.24a7.159 7.159 0 0 0 1.048-.625 11.775 11.775 0 0 0 2.517-2.453c1.678-2.195 3.061-5.513 2.465-9.99a1.541 1.541 0 0 0-1.044-1.263 62.467 62.467 0 0 0-2.887-.87C9.843.266 8.69 0 8 0zm2.146 5.146a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 7.793l2.646-2.647z"/>
-            </svg>&nbsp;&nbsp;
-            <h5 class="my-0 mr-md-auto font-weight-normal">seKUrity</h5>
-            <nav class="my-2 my-md-0 mr-md-3">
-              <a class="p-2 text-dark" href="index.php">Home</a>
-              <a class="p-2 text-dark" href="about.php">About</a>
-              <a class="p-2 text-dark" href="board.php">Board</a>
-              <a class="p-2 text-dark" href="members.php">Members</a>
-            </nav>
-            <a class="btn <?php if(isset($_COOKIE["user_id"])) { echo "btn-outline-danger"; } else { echo "btn-outline-success"; } ?>" href="<?php if(isset($_COOKIE["user_id"])) { echo "cookie_logout.php"; } else { echo "login.php"; } ?>">
-			        <?php if(isset($_COOKIE["user_id"])) { echo "Logout"; } else { echo "Login"; } ?>
-		        </a>
-            <!--signup.php-->
-        </header>
+    <?php include ('header.php');?>
 
     <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
       <h1 class="display-4">About</h1>
@@ -40,40 +25,16 @@
     
     <div class="container">
       <p class="text-dark">2023년 2학기 seKUrity 파일 업로드 & 쿠키 탈취 취약점 실습 페이지입니다.</p>
-      <p class="text-dark">게시판 글쓰기 기능, 파일 업로드 기능, 로그인 기능 등을 활용해 실습해보세요.</p>
       <p class="text-dark">실습 페이지 만들기 정말 힘드네요... 수고하세요^^</p>
+      <p class="text-dark">ps. Home으로 가면 다양한 실습 페이지를 확인할 수 있습니다.</p>
       <br>
       <div class="alert alert-dark" role="alert">
-          <strong>파일 업로드 취약점 공격 순서</strong><br>
-          <ol>
-              <li>서버 환경을 분석한다</li>
-              <li>허용된 파일을 업로드한다</li>
-              <li>Print 하는 간단한 스크립트 파일을 업로드 후 실행이 되는지 확인한다</li>
-              <li>웹 쉘 파일을 업로드한다</li>
-              <li>웹 쉘 파일을 찾아 운영체제 명령을 실행한다</li>
-          </ol>
+          <strong>seKUrity는?</strong><br>
+          <span>저희 세쿠리티는 학교 유일의 정보보안 소모임입니다. 매주 스터디를 진행하며 교내 보안 세미나와 CTF도 개최하고 있습니다. 정기적으로 외부 기관에서 개최하는 해킹대회에도 참가하고 있습니다. seKUrity에 오시면 같은 진로를 가진 사람들과 어울리며 보안과 관련된 다양한 경험을 하실 수 있습니다. </span>
       </div>
     </div>
 
-    <!-- Icons -->
-    <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
-    <script>
-      feather.replace()
-    </script>
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script>window.jQuery || document.write('<script src="./js/jquery-slim.min.js"><\/script>')</script>
-    <script src="./js/popper.min.js"></script>
-    <script src="./js/bootstrap.min.js"></script>
-    <script src="./js/holder.min.js"></script>
-    <script>
-      Holder.addTheme('thumb', {
-        bg: '#55595c',
-        fg: '#eceeef',
-        text: 'Thumbnail'
-      });
-    </script>
+    <?php include ('bootstrap_core.html'); ?>
   </body>
 </html>
+
