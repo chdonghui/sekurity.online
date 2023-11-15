@@ -23,7 +23,7 @@
 
         <div class="container">
           <div class="row row-cols-3">
-            <div class="col-4">
+            <div class="col col-md-4 mt-4 d-flex justify-content-center">
               <div class="card" style="width: 18rem;">
                 <img src="./img/webhackingguid.JPG" class="card-img-top rounded mx-auto d-block" alt="web security guid img">
                 <div class="card-body">
@@ -33,7 +33,47 @@
                 </div>
               </div>
             </div>
-            <div class="col-4">
+            <div class="col col-md-4 mt-4 d-flex justify-content-center">
+              <div class="card" style="width: 18rem;">
+                <img src="./img/os.JPG" class="card-img-top rounded mx-auto d-block" alt="Apple Market img">
+                <div class="card-body">
+                  <h5 class="card-title">Blind command injection</h5>
+                  <p class="card-text">sapphire의 실습 사이트입니다.</p>
+                  <a href="http://sekurity.online:5555" target="_blank" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+            <div class="col col-md-4 mt-4 d-flex justify-content-center">
+              <div class="card" style="width: 18rem;">
+                <img src="./img/ping.JPG" class="card-img-top rounded mx-auto d-block" alt="Moon's Security img">
+                <div class="card-body">
+                  <h5 class="card-title">Ping playground</h5>
+                  <p class="card-text">sapphire의 실습 사이트입니다.</p>
+                  <a href="http://sekurity.online:5055" target="_blank" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+            <div class="col col-md-4 mt-4 d-flex justify-content-center">
+              <div class="card" style="width: 18rem;">
+              <img src="./img/ping2.JPG" class="card-img-top rounded mx-auto d-block" alt="XSS Game img">
+                <div class="card-body">
+                    <h5 class="card-title">Ping</h5>
+                    <p class="card-text">sapphire의 실습 사이트입니다.</p>
+                    <a href="http://sekurity.online:5006" target="_blank" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+            <div class="col col-md-4 mt-4 d-flex justify-content-center">
+              <div class="card" style="width: 18rem;">
+                <img src="./img/length.JPG" class="card-img-top rounded mx-auto d-block" alt="XSS Game img">
+                <div class="card-body">
+                    <h5 class="card-title">Forelength</h5>
+                    <p class="card-text">sapphire의 실습 사이트입니다.</p>
+                    <a href="http://sekurity.online:5005" target="_blank" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+            <div class="col col-md-4 mt-4 d-flex justify-content-center">
               <div class="card" style="width: 18rem;">
                 <img src="./img/applemarket.JPG" class="card-img-top rounded mx-auto d-block" alt="Apple Market img">
                 <div class="card-body">
@@ -43,29 +83,17 @@
                 </div>
               </div>
             </div>
-            <div class="col-4">
+            <div class="col col-md-4 mt-4 d-flex justify-content-center">
               <div class="card" style="width: 18rem;">
                 <img src="./img/hackingbook.JPG" class="card-img-top rounded mx-auto d-block" alt="Moon's Security img">
                 <div class="card-body">
                   <h5 class="card-title">Moon's Security</h5>
                   <p class="card-text">MoonLab의 실습 사이트입니다.</p>
-                  <a href="http://sekurity.online:9999/hackersite/index.php" target="_blank" class="btn btn-primary">Go somewhere</a>
+                  <a href="http://sekurity.online:9999/hackersite/" target="_blank" class="btn btn-primary">Go somewhere</a>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="row row-cols-3 mt-4">
-            <div class="col-4">
-              <div class="card" style="width: 18rem;">
-              <img src="./img/xssGame.JPG" class="card-img-top rounded mx-auto d-block" alt="XSS Game img">
-              <div class="card-body">
-                  <h5 class="card-title">XSS Game</h5>
-                  <p class="card-text">XSS 실습 사이트입니다.</p>
-                  <a href="https://xss-game.appspot.com" target="_blank" class="btn btn-primary">Go somewhere</a>
-              </div>
-            </div>
-            </div>
-            <div class="col-4">
+            <div class="col col-md-4 mt-4 d-flex justify-content-center">
               <div class="card" style="width: 18rem;">
                 <img src="./img/DVWA.JPG" class="card-img-top rounded mx-auto d-block" alt="NAS img">
                 <div class="card-body">
@@ -75,7 +103,29 @@
                 </div>
               </div>
             </div>
-            <div class="col-4">
+            <!--
+            <div class="col col-md-4 mt-4 d-flex justify-content-center">
+              <div class="card" style="width: 18rem;">
+              <img src="./img/xssGame.JPG" class="card-img-top rounded mx-auto d-block" alt="XSS Game img">
+                <div class="card-body">
+                    <h5 class="card-title">XSS Game</h5>
+                    <p class="card-text">XSS 실습 사이트입니다.</p>
+                    <a href="https://xss-game.appspot.com" target="_blank" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+            <div class="col col-md-4 mt-4 d-flex justify-content-center">
+              <div class="card" style="width: 18rem;">
+                <img src="./img/dreamhack.JPG" class="card-img-top rounded mx-auto d-block" alt="XSS Game img">
+                <div class="card-body">
+                    <h5 class="card-title">Dreamhack</h5>
+                    <p class="card-text">다양한 실습 가능한 사이트입니다.</p>
+                    <a href="https://dreamhack.io" target="_blank" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+            -->
+            <div class="col col-md-4 mt-4 d-flex justify-content-center">
               <div class="card" style="width: 18rem;">
                 <img src="./img/NAS.JPG" class="card-img-top rounded mx-auto d-block" alt="NAS img">
                 <div class="card-body">

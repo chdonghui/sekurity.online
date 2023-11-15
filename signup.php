@@ -52,8 +52,7 @@
 			}
 			if(document.member.pw.value != document.member.pw_confirm.value){
 				alert("비밀번호가 일치하지 않습니다.\n다시 입력해 주세요!");
-				document.member.id.focus();
-				document.member.pw.select();
+				document.member.pw_confirm.focus();
 				event.preventDefault();
 			}
 			//document.member.submit();
@@ -151,4 +150,3 @@
         <?php include ('bootstrap_core.html'); ?>
     </body>
 </html>
-

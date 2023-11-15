@@ -24,11 +24,13 @@
 			exit; // 리디렉션 후 코드 실행을 중지합니다.
 		} else {
 			// 로그인 실패 시 다시 로그인 페이지로 리디렉션
-			header("Location: login.php");
-			exit;
+			// echo "<script>alert('로그인 실패');</script>";
+			// header("Location: login.php");
+			exit("<script>alert('로그인 실패');
+			location.replace('login.php');
+			</script>");
 		}
 
 		mysqli_close($db_conn);
 	}
 ?>
-
