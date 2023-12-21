@@ -3,4 +3,4 @@ docker run -it \
 --name sekurity \
 -p 10000:80 \
 -v $(pwd)/src/:/var/www/html/ \
-httpd:latest bash
+sekurity:0.1 bash 
